@@ -1,0 +1,35 @@
+@charset "UTF-8";
+body{background: #19182d}
+*{margin: 0; padding: 0;}
+
+
+.easypieChart{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.easypieChart .container{
+    display: flex;
+    width: 1200px;
+}
+.easypieChart .box{
+    position: relative;
+    width: 25%; height: 230px;
+}
+.easypieChart .box .chart{
+    width: 80%; margin: 0 auto; /* 중간에 위치하게 함 */
+}
+.easypieChart .box .chart canvas{
+    width: 100%; height: 100%;
+}
+
+.easypieChart .box h2{
+    text-align: center; font-size: 25px;
+    color: #fff; text-transform: uppercase;}
+.easypieChart .box h3{
+    position: absolute;
+    left: 50%; top: 35%;
+    transform: translateX(-50%);
+    color: #fff; font-size: 48px;
+}
